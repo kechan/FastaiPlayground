@@ -7,5 +7,8 @@ All notebook for FastAI learning purposes.
    - Configuring your own transforms
    - How to add a new affine and pixel tranform not available in fastai (examples: rot90, shear, and blur)
 
+* Data Block API
+   - Some example use of Fastai Data Block API
+
 * Using Fastai Data Block API together with PyTorch and Keras Training
    - TBD
