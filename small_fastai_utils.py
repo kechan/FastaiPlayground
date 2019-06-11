@@ -7,9 +7,9 @@ import numpy as np
 import sklearn
 import re, warnings
 
-def join_df(left, right, left_on, right_on=None, suffix='_y'):
+def join_df(left, right, left_on, right_on=None, suffix='_y', how='left'):
     if right_on is None: right_on = left_on
-    return left.merge(right, how='left', left_on=left_on, right_on=right_on, 
+    return left.merge(right, how=how, left_on=left_on, right_on=right_on, 
                       suffixes=("", suffix))
 
 def proc_df(df, y_fld=None, skip_flds=None, ignore_flds=None, do_scale=False, na_dict=None,
